@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "990739591239",
+    "firebase_url": "https://barang-c0b64-default-rtdb.firebaseio.com",
+    "project_id": "barang-c0b64",
+    "storage_bucket": "barang-c0b64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990739591239:android:2b353e12ef4bdb1e4b8162",
+        "android_client_info": {
+          "package_name": "com.ferdi.qrbarcodescanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990739591239-c5a6ujrj7hdmv3bgp15vi4j86fnbk2qe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ferdi.qrbarcodescanner",
+            "certificate_hash": "abfe774ba4f96c77e732ec11dcbccea049f88eb1"
+          }
+        },
+        {
+          "client_id": "990739591239-28h43emu1ohe39tlsb3lnqn1si07i9or.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAY03mxulWL0qyED5vpgYujjg2VKndYvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990739591239-28h43emu1ohe39tlsb3lnqn1si07i9or.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
