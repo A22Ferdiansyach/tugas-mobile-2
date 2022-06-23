@@ -17,6 +17,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.zxing.Result;
 
 import org.json.JSONArray;
@@ -33,6 +35,9 @@ public class MediaBarCode extends AppCompatActivity implements ZXingScannerView.
     String kode = "";
     String nama="";
     String harga = "";
+
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference("Barang");
 
 
     @Override
@@ -101,6 +106,7 @@ public class MediaBarCode extends AppCompatActivity implements ZXingScannerView.
                                 DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
                                 alertDialog.setMessage("Kode Barcode : " + kode + "\nNama Barang : " + nama + "\nHarga Barang : " + decimalFormat.format(Double.parseDouble(harga)));
 
+                                tambahData(kode, nama, harga);
                                 alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                                         new DialogInterface.OnClickListener() {
                                             public void onClick(DialogInterface dialog, int which) {
@@ -127,6 +133,15 @@ public class MediaBarCode extends AppCompatActivity implements ZXingScannerView.
                 });
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(jsonArrayRequest);
+    }
+
+    private void tambahData(String kode, String nama, String harga ) {
+        String key = myRef.push().getKey();
+
+        myRef.child(key).child("kode").setValue(kode);
+        myRef.child(key).child("nama").setValue(nama);
+        myRef.child(key).child("harga").setValue(harga);
+        Toast.makeText(MediaBarCode.this, "Berhasil menambahkan data ke firebase", Toast.LENGTH_LONG).show();
     }
 
 
