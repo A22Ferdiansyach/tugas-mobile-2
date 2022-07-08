@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_final"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_140sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:fontFamily="@font/popsem"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_320sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/container_aout"
+            android:fontFamily="@font/popsem"
+            android:padding="@dimen/_5sdp"
+            android:text="A22.2020.02847"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/container_aout"
+            android:fontFamily="@font/popsem"
+            android:padding="@dimen/_5sdp"
+            android:text="M. Ferdiansyach"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/container_aout"
+            android:fontFamily="@font/popsem"
+            android:padding="@dimen/_5sdp"
+            android:text="D III Teknik Informatika"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

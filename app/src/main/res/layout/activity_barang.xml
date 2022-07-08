@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".BarangActivity">
+
+    <RelativeLayout
+        android:id="@+id/layou1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        >
+
+        <TextView
+            android:id="@+id/h1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/popmed"
+            android:text="Selamat Datang,"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9sdp" />
+
+
+        <TextView
+            android:id="@+id/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M Ferdiansyach N. S"
+            android:textColor="@color/white"
+            android:layout_below="@id/h1"
+            android:fontFamily="@font/popmed"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <Button
+            android:id="@+id/tambah_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/h2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/popsem"
+            android:text="Tambah Barang"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp"
+            app:backgroundTint="#FFD600"
+            app:cornerRadius="@dimen/_20sdp"
+            app:elevation="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/image_rocket"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_minus40sdp"
+            android:src="@drawable/zzxzx" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layou1"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcylrBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_16sdp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
